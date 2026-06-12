@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Launch Pad — סוכנות מערכות AI</title>
+  <meta name="description" content="Launch Pad בונה מערכות AI שמריצות את שירות הלקוחות, השיווק והצמיחה שלך — כדי שהעסק יפעל בלי העבודה השחורה." />
+
+  <!-- Favicon (logo mark — transparent, adapts to light/dark mode) -->
+  <link rel="icon" type="image/svg+xml" href="logo/favicon.svg?v=2" />
+  <link rel="icon" type="image/png" sizes="32x32" href="logo/favicon-32.png?v=2" />
+  <link rel="icon" type="image/png" sizes="16x16" href="logo/favicon-16.png?v=2" />
+  <link rel="apple-touch-icon" sizes="180x180" href="logo/apple-touch-icon.png?v=2" />
+
+  <!-- Fonts: Geist + Geist Mono (Latin) + Heebo (Hebrew) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600&family=Geist+Mono:wght@400;500&family=Heebo:wght@300;400;500;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/styles.css?v=28" />
+</head>
+<body>
+
+  <!-- ===================== NAV ===================== -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a class="nav__logo" href="#top" aria-label="Launch Pad">
+        <img class="nav__logo-img" src="logo/logo-white.png" alt="Launch Pad" />
+      </a>
+      <nav class="nav__links">
+        <a href="#work">עבודות</a>
+        <a href="#services">שירותים</a>
+        <a href="#why">למה אנחנו</a>
+        <a href="#faq">שאלות</a>
+        <a class="nav__studio-link" href="https://studio.launch-pad.co.il" target="_blank" rel="noopener">Launch Studio</a>
+      </nav>
+      <a class="shiny-cta shiny-cta--nav" href="https://wa.me/972526088604" target="_blank" rel="noopener">
+        <div class="shiny-cta__outer" aria-hidden="true">
+          <div class="shiny-cta__shader" id="nav-shader"></div>
+          <div class="shiny-cta__inner"></div>
+        </div>
+        <span>לייעוץ חינם</span>
+      </a>
+      <button class="nav__ham" id="nav-ham" aria-label="תפריט" aria-expanded="false">
+        <span class="nav__ham-line"></span>
+        <span class="nav__ham-line"></span>
+        <span class="nav__ham-line"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===================== MOBILE MENU ===================== -->
+  <div class="mob-menu" id="mob-menu" aria-hidden="true">
+    <button class="mob-menu__close" id="mob-close" aria-label="סגור תפריט"></button>
+    <div class="mob-menu__inner">
+      <span class="mono mob-menu__eyebrow">◉ ניווט</span>
+      <nav class="mob-menu__links">
+        <a class="mob-menu__link" href="#work">עבודות</a>
+        <a class="mob-menu__link" href="#services">שירותים</a>
+        <a class="mob-menu__link" href="#why">למה אנחנו</a>
+        <a class="mob-menu__link" href="#faq">שאלות</a>
+        <a class="mob-menu__link nav__studio-link" href="https://studio.launch-pad.co.il" target="_blank" rel="noopener">Launch Studio</a>
+      </nav>
+      <div class="mob-menu__cta">
+        <a class="shiny-cta" href="https://wa.me/972526088604" target="_blank" rel="noopener" id="mob-cta">
+          <div class="shiny-cta__outer" aria-hidden="true">
+            <div class="shiny-cta__shader" id="mob-shader"></div>
+            <div class="shiny-cta__inner"></div>
+          </div>
+          <span>לייעוץ חינם</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <main id="top">
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" id="hero">
+      <div class="hero__media" aria-hidden="true">
+        <video class="hero__video" autoplay muted loop playsinline preload="metadata" poster="video/hero-poster.jpg">
+          <source src="video/hero-web.mp4" type="video/mp4" />
+        </video>
+      </div>
+
+      <div class="hero__grid container">
+        <ul class="hero__services mono">
+          <li>/ סוכני AI</li>
+          <li>/ אוטומציה</li>
+          <li>/ SEO &amp; GEO</li>
+        </ul>
+
+        <p class="hero__desc">
+          אנחנו בונים מערכות AI שמביאות בהירות, מהירות וטווח לאופן
+          שבו העסק שלך פועל &mdash; ורצות בלי העבודה השחורה.
+        </p>
+
+        <div class="hero__headline">
+          <h1 class="hero__title">
+            <span class="line">בנוי.</span>
+            <span class="line">אוטומטי.</span>
+            <span class="line">באוויר.</span>
+          </h1>
+        </div>
+
+        <aside class="talkcard">
+          <div class="talkcard__avatar"><img class="talkcard__img" src="img/contact.png" alt="יצירת קשר — שיחה" loading="lazy"></div>
+          <div class="talkcard__body">
+            <p class="talkcard__name">דברו עם עמית</p>
+            <p class="talkcard__role mono">מייסד Launch Pad</p>
+            <a class="btn btn--light talkcard__btn" href="https://wa.me/972526088604" target="_blank" rel="noopener">לשיחת 15 דק' <span class="arrow">&lsaquo;</span></a>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ===================== LOGOS ===================== -->
+    <section class="logos" id="logos">
+      <p class="logos__label mono">מותגים שבוטחים בנו, ממגוון תעשיות</p>
+      <div class="logos__grid">
+        <div class="logo-cell"><div class="logo-card"><span class="logo-word">TopTV</span></div></div>
+        <div class="logo-cell"><div class="logo-card"><span class="logo-word">PestOff</span></div></div>
+        <div class="logo-cell"><div class="logo-card"><span class="logo-word">Ornit&nbsp;Halevi</span></div></div>
+        <div class="logo-cell"><div class="logo-card"><span class="logo-word">Money&nbsp;Together</span></div></div>
+        <div class="logo-cell"><div class="logo-card"><span class="logo-word">RE/MAX&nbsp;Together</span></div></div>
+        <div class="logo-cell"><div class="logo-card"><span class="logo-word">Easytax</span></div></div>
+      </div>
+    </section>
+
+    <!-- ===================== PAIN POINT (pinned orbit) ===================== -->
+    <section class="pain" id="pain">
+      <div class="pain__sticky">
+        <h2 class="pain__title">העלות הנסתרת<br />של עבודה ידנית</h2>
+        <div class="pain__orbit" aria-hidden="true">
+          <span class="ring ring--orbit ro1"></span>
+          <span class="ring ring--orbit ro2"></span>
+          <span class="ring ring--orbit ro3"></span>
+        </div>
+        <ul class="pain__items">
+          <li class="pain-pill" style="--a:6deg;--r:330px"><span class="pain-pill__inner">חוסר נראות</span></li>
+          <li class="pain-pill" style="--a:67deg;--r:450px"><span class="pain-pill__inner">תגובה איטית</span></li>
+          <li class="pain-pill" style="--a:124deg;--r:370px"><span class="pain-pill__inner">תהליכים מפוצלים</span></li>
+          <li class="pain-pill" style="--a:188deg;--r:360px"><span class="pain-pill__inner">פולואפים שנשכחים</span></li>
+          <li class="pain-pill" style="--a:238deg;--r:455px"><span class="pain-pill__inner">שעות מבוזבזות</span></li>
+          <li class="pain-pill" style="--a:303deg;--r:395px"><span class="pain-pill__inner">הכנסות שדולפות</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===================== OUR WORKS (stacked sticky cards) ===================== -->
+    <section class="works" id="work">
+      <div class="works__intro container">
+        <span class="pill mono">המערכות שלנו</span>
+        <h2 class="section-title">מובנה. אוטומטי. מוכן.</h2>
+        <p class="section-sub">שלוש מערכות שעובדות בשבילך מסביב לשעון &mdash; מתוכן, דרך שירות, ועד הכנסות.</p>
+      </div>
+
+      <div class="works__stack">
+        <!-- Card 1 — SEO & GEO bot -->
+        <article class="workcard" data-index="1">
+          <div class="workcard__media"><img class="svc-shot" src="img/icon-seo.png" alt="אייקון בוט SEO — חץ צמיחה מזכוכית" loading="lazy"></div>
+          <div class="workcard__content">
+            <p class="workcard__meta mono">נוכחות אורגנית</p>
+            <p class="workcard__client">בוט SEO &amp; GEO</p>
+            <h3 class="workcard__title">להופיע בגוגל &mdash; ולהיות מומלץ על־ידי AI</h3>
+            <p class="workcard__desc">מנוע תוכן אוטונומי שכותב, מפרסם ומדרג בעצמו &mdash; וגורם גם לגוגל וגם ל-ChatGPT להמליץ עליך.</p>
+            <a class="btn btn--ghost" href="https://wa.me/972526088604" target="_blank" rel="noopener">לפרטים <span class="arrow">&lsaquo;</span></a>
+            <div class="workcard__stats">
+              <div class="stat"><span class="stat__num" data-count="100" data-suffix="%">100%</span><span class="stat__label mono">פרסום אוטונומי</span></div>
+              <div class="stat"><span class="stat__num" data-count="12" data-suffix="">12</span><span class="stat__label mono">מאמרים בחודש</span></div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 2 — CS chat bot -->
+        <article class="workcard" data-index="2">
+          <div class="workcard__media"><img class="svc-shot" src="img/icon-chat.png" alt="אייקון בוט צ'אט — בועת שיחה מזכוכית" loading="lazy"></div>
+          <div class="workcard__content">
+            <p class="workcard__meta mono">שירות לקוחות</p>
+            <p class="workcard__client">בוט צ'אט AI</p>
+            <h3 class="workcard__title">סוכן שעונה, מוכר ומסנן &mdash; מסביב לשעון</h3>
+            <p class="workcard__desc">סוכן AI תמיד-זמין ב-WhatsApp ובאתר. עונה תוך שניות, מטפל בהזמנות ושאלות, ומעביר לנציג אנושי בדיוק כשצריך.</p>
+            <a class="btn btn--ghost" href="https://wa.me/972526088604" target="_blank" rel="noopener">לפרטים <span class="arrow">&lsaquo;</span></a>
+            <div class="workcard__stats">
+              <div class="stat"><span class="stat__num" data-count="24" data-suffix="/7">24/7</span><span class="stat__label mono">זמינות מלאה</span></div>
+              <div class="stat"><span class="stat__num" data-count="0" data-suffix="">0</span><span class="stat__label mono">שיחות שהוחמצו</span></div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 3 — cart recovery -->
+        <article class="workcard" data-index="3">
+          <div class="workcard__media"><img class="svc-shot" src="img/icon-cart.png" alt="אייקון שחזור עגלות — עגלת קניות מזכוכית" loading="lazy"></div>
+          <div class="workcard__content">
+            <p class="workcard__meta mono">הכנסות חוזרות</p>
+            <p class="workcard__client">שחזור עגלות</p>
+            <h3 class="workcard__title">מחזירים קונים שנטשו &mdash; אוטומטית</h3>
+            <p class="workcard__desc">הפלואו מזהה עגלה נטושה, שולח תזכורת אישית בוואטסאפ עם קוד הנחה אישי, ומחזיר את הקנייה &mdash; בלי שתיגע.</p>
+            <a class="btn btn--ghost" href="https://wa.me/972526088604" target="_blank" rel="noopener">לפרטים <span class="arrow">&lsaquo;</span></a>
+            <div class="workcard__stats">
+              <div class="stat"><span class="stat__num" data-count="10" data-suffix="%">10%</span><span class="stat__label mono">מהעגלות חוזרות</span></div>
+              <div class="stat"><span class="stat__num" data-count="100" data-suffix="%">100%</span><span class="stat__label mono">אוטומטי לגמרי</span></div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="works__more">
+        <a class="btn btn--light" href="https://wa.me/972526088604" target="_blank" rel="noopener">רוצים מערכת כזו? בואו נדבר <span class="arrow">&lsaquo;</span></a>
+      </div>
+    </section>
+
+    <!-- ===================== HOW IT WORKS ===================== -->
+    <section class="how" id="how">
+      <div class="how__head container">
+        <span class="pill mono">איך זה עובד</span>
+        <h2 class="section-title">גישה פשוטה ומובנית לאוטומציה</h2>
+        <p class="section-sub">אנחנו מתכננים מערכות שמסירות חיכוך, מחדדות מיקוד, וגדלות איתך.</p>
+      </div>
+      <div class="how__grid container">
+        <article class="step">
+          <div class="step__card"><img class="step__shot" src="img/how-1.png" alt="מבינים את התהליך — זכוכית מגדלת מזכוכית" loading="lazy"></div>
+          <h3 class="step__title">1. מבינים את התהליך שלך</h3>
+          <p class="step__desc">ממפים את התהליכים, הכלים וצווארי הבקבוק.</p>
+        </article>
+        <article class="step">
+          <div class="step__card"><img class="step__shot" src="img/how-2.png" alt="מתכננים ובונים — גלגלי שיניים מזכוכית" loading="lazy"></div>
+          <h3 class="step__title">2. מתכננים ובונים את המערכת</h3>
+          <p class="step__desc">מטמיעים אוטומציה מותאמת לעסק שלך.</p>
+        </article>
+        <article class="step">
+          <div class="step__card"><img class="step__shot" src="img/how-3.png" alt="מייעלים ומרחיבים — רוקט מזכוכית" loading="lazy"></div>
+          <h3 class="step__title">3. מייעלים ומרחיבים</h3>
+          <p class="step__desc">מלטשים, משפרים ומרחיבים ככל שאתה גדל.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===================== INTEGRATION ===================== -->
+    <section class="integration" id="integration">
+      <div class="integration__grid">
+        <div class="int-tile" title="WhatsApp" style="--glow:#25D366"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></div>
+        <div class="int-tile" title="Shopify" style="--glow:#95BF47"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M15.337 23.979l7.216-1.561s-2.604-17.613-2.625-17.73c-.018-.116-.114-.192-.211-.192s-1.929-.136-1.929-.136-1.275-1.274-1.439-1.411c-.045-.037-.075-.057-.121-.074l-.914 21.104h.023zM11.71 11.305s-.81-.424-1.774-.424c-1.447 0-1.504.906-1.504 1.141 0 1.232 3.24 1.715 3.24 4.629 0 2.295-1.44 3.76-3.406 3.76-2.354 0-3.54-1.465-3.54-1.465l.646-2.086s1.245 1.066 2.28 1.066c.675 0 .975-.545.975-.932 0-1.619-2.654-1.694-2.654-4.359-.034-2.237 1.571-4.416 4.827-4.416 1.257 0 1.875.361 1.875.361l-.945 2.715-.02.01zM11.17.83c.136 0 .271.038.405.135-.984.465-2.064 1.639-2.508 3.992-.656.213-1.293.405-1.889.578C7.697 3.75 8.951.84 11.17.84V.83zm1.235 2.949v.135c-.754.232-1.583.484-2.394.736.466-1.777 1.333-2.645 2.085-2.971.193.501.309 1.176.309 2.1zm.539-2.234c.694.074 1.141.867 1.429 1.755-.349.114-.735.231-1.158.366v-.252c0-.752-.096-1.371-.271-1.871v.002zm2.992 1.289c-.02 0-.06.021-.078.021s-.289.075-.714.21c-.423-1.233-1.176-2.37-2.508-2.37h-.115C12.135.209 11.669 0 11.265 0 8.159 0 6.675 3.877 6.21 5.846c-1.194.365-2.063.636-2.16.674-.675.213-.694.232-.772.87-.075.462-1.83 14.063-1.83 14.063L15.009 24l.927-21.166z"/></svg></div>
+        <div class="int-tile" title="Meta Ads" style="--glow:#0866FF"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.915 4.03c-1.968 0-3.683 1.28-4.871 3.113C.704 9.208 0 11.883 0 14.449c0 .706.07 1.369.21 1.973a6.624 6.624 0 0 0 .265.86 5.297 5.297 0 0 0 .371.761c.696 1.159 1.818 1.927 3.593 1.927 1.497 0 2.633-.671 3.965-2.444.76-1.012 1.144-1.626 2.663-4.32l.756-1.339.186-.325c.061.1.121.196.183.3l2.152 3.595c.724 1.21 1.665 2.556 2.47 3.314 1.046.987 1.992 1.22 3.06 1.22 1.075 0 1.876-.355 2.455-.843a3.743 3.743 0 0 0 .81-.973c.542-.939.861-2.127.861-3.745 0-2.72-.681-5.357-2.084-7.45-1.282-1.912-2.957-2.93-4.716-2.93-1.047 0-2.088.467-3.053 1.308-.652.57-1.257 1.29-1.82 2.05-.69-.875-1.335-1.547-1.958-2.056-1.182-.966-2.315-1.303-3.454-1.303zm10.16 2.053c1.147 0 2.188.758 2.992 1.999 1.132 1.748 1.647 4.195 1.647 6.4 0 1.548-.368 2.9-1.839 2.9-.58 0-1.027-.23-1.664-1.004-.496-.601-1.343-1.878-2.832-4.358l-.617-1.028a44.908 44.908 0 0 0-1.255-1.98c.07-.109.141-.224.211-.327 1.12-1.667 2.118-2.602 3.358-2.602zm-10.201.553c1.265 0 2.058.791 2.675 1.446.307.327.737.871 1.234 1.579l-1.02 1.566c-.757 1.163-1.882 3.017-2.837 4.338-1.191 1.649-1.81 1.817-2.486 1.817-.524 0-1.038-.237-1.383-.794-.263-.426-.464-1.13-.464-2.046 0-2.221.63-4.535 1.66-6.088.454-.687.964-1.226 1.533-1.533a2.264 2.264 0 0 1 1.088-.285z"/></svg></div>
+        <div class="int-tile" title="Google" style="--glow:#4285F4"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.48 10.92v3.28h7.84c-.24 1.84-.853 3.187-1.787 4.133-1.147 1.147-2.933 2.4-6.053 2.4-4.827 0-8.6-3.893-8.6-8.72s3.773-8.72 8.6-8.72c2.6 0 4.507 1.027 5.907 2.347l2.307-2.307C18.747 1.44 16.133 0 12.48 0 5.867 0 .307 5.387.307 12s5.56 12 12.173 12c3.573 0 6.267-1.173 8.373-3.36 2.16-2.16 2.84-5.213 2.84-7.667 0-.76-.053-1.467-.173-2.053H12.48z"/></svg></div>
+        <div class="int-tile" title="Cloudflare" style="--glow:#FF5E1F"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.5088 16.8447c.1475-.5068.0908-.9707-.1553-1.3154-.2246-.3164-.6045-.499-1.0615-.5205l-8.6592-.1123a.1559.1559 0 0 1-.1333-.0713c-.0283-.042-.0351-.0986-.021-.1553.0278-.084.1123-.1484.2036-.1562l8.7359-.1123c1.0351-.0489 2.1601-.8868 2.5537-1.9136l.499-1.3013c.0215-.0561.0293-.1128.0147-.168-.5625-2.5463-2.835-4.4453-5.5499-4.4453-2.5039 0-4.6284 1.6177-5.3876 3.8614-.4927-.3658-1.1187-.5625-1.794-.499-1.2026.119-2.1665 1.083-2.2861 2.2856-.0283.31-.0069.6128.0635.894C1.5683 13.171 0 14.7754 0 16.752c0 .1748.0142.3515.0352.5273.0141.083.0844.1475.1689.1475h15.9814c.0909 0 .1758-.0645.2032-.1553l.12-.4268zm2.7568-5.5634c-.0771 0-.1611 0-.2383.0112-.0566 0-.1054.0415-.127.0976l-.3378 1.1744c-.1475.5068-.0918.9707.1543 1.3164.2256.3164.6055.498 1.0625.5195l1.8437.1133c.0557 0 .1055.0263.1329.0703.0283.043.0351.1074.0214.1562-.0283.084-.1132.1485-.204.1553l-1.921.1123c-1.041.0488-2.1582.8867-2.5527 1.914l-.1406.3585c-.0283.0713.0215.1416.0986.1416h6.5977c.0771 0 .1474-.0489.169-.126.1122-.4082.1757-.837.1757-1.2803 0-2.6025-2.125-4.727-4.7344-4.727"/></svg></div>
+        <div class="int-tile" title="Telegram" style="--glow:#2EACE1"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg></div>
+        <div class="int-tile" title="Claude" style="--glow:#DB775B"><svg viewBox="0 0 24 24" fill="currentColor"><path d="m4.7144 15.9555 4.7174-2.6471.079-.2307-.079-.1275h-.2307l-.7893-.0486-2.6956-.0729-2.3375-.0971-2.2646-.1214-.5707-.1215-.5343-.7042.0546-.3522.4797-.3218.686.0608 1.5179.1032 2.2767.1578 1.6514.0972 2.4468.255h.3886l.0546-.1579-.1336-.0971-.1032-.0972L6.973 9.8356l-2.55-1.6879-1.3356-.9714-.7225-.4918-.3643-.4614-.1578-1.0078.6557-.7225.8803.0607.2246.0607.8925.686 1.9064 1.4754 2.4893 1.8336.3643.3035.1457-.1032.0182-.0728-.164-.2733-1.3539-2.4467-1.445-2.4893-.6435-1.032-.17-.6194c-.0607-.255-.1032-.4674-.1032-.7285L6.287.1335 6.6997 0l.9957.1336.419.3642.6192 1.4147 1.0018 2.2282 1.5543 3.0296.4553.8985.2429.8318.091.255h.1579v-.1457l.1275-1.706.2368-2.0947.2307-2.6957.0789-.7589.3764-.9107.7468-.4918.5828.2793.4797.686-.0668.4433-.2853 1.8517-.5586 2.9021-.3643 1.9429h.2125l.2429-.2429.9835-1.3053 1.6514-2.0643.7286-.8196.85-.9046.5464-.4311h1.0321l.759 1.1293-.34 1.1657-1.0625 1.3478-.8804 1.1414-1.2628 1.7-.7893 1.36.0729.1093.1882-.0183 2.8535-.607 1.5421-.2794 1.8396-.3157.8318.3886.091.3946-.3278.8075-1.967.4857-2.3072.4614-3.4364.8136-.0425.0304.0486.0607 1.5482.1457.6618.0364h1.621l3.0175.2247.7892.522.4736.6376-.079.4857-1.2142.6193-1.6393-.3886-3.825-.9107-1.3113-.3279h-.1822v.1093l1.0929 1.0686 2.0035 1.8092 2.5075 2.3314.1275.5768-.3218.4554-.34-.0486-2.2039-1.6575-.85-.7468-1.9246-1.621h-.1275v.17l.4432.6496 2.3436 3.5214.1214 1.0807-.17.3521-.6071.2125-.6679-.1214-1.3721-1.9246L14.38 17.959l-1.1414-1.9428-.1397.079-.674 7.2552-.3156.3703-.7286.2793-.6071-.4614-.3218-.7468.3218-1.4753.3886-1.9246.3157-1.53.2853-1.9004.17-.6314-.0121-.0425-.1397.0182-1.4328 1.9672-2.1796 2.9446-1.7243 1.8456-.4128.164-.7164-.3704.0667-.6618.4008-.5889 2.386-3.0357 1.4389-1.882.929-1.0868-.0062-.1579h-.0546l-6.3385 4.1164-1.1293.1457-.4857-.4554.0608-.7467.2307-.2429 1.9064-1.3114Z"/></svg></div>
+        <div class="int-tile" title="Resend" style="--glow:#F5F5F7"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M14.679 0c4.648 0 7.413 2.765 7.413 6.434s-2.765 6.434-7.413 6.434H12.33L24 24h-8.245l-8.88-8.44c-.636-.588-.93-1.273-.93-1.86 0-.831.587-1.565 1.713-1.883l4.574-1.224c1.737-.465 2.936-1.81 2.936-3.572 0-2.153-1.761-3.4-3.939-3.4H0V0z"/></svg></div>
+        <div class="int-tile" title="OpenAI" style="--glow:#10A37F"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M22.2819 9.8211a5.9847 5.9847 0 0 0-.5157-4.9108 6.0462 6.0462 0 0 0-6.5098-2.9A6.0651 6.0651 0 0 0 4.9807 4.1818a5.9847 5.9847 0 0 0-3.9977 2.9 6.0462 6.0462 0 0 0 .7427 7.0966 5.98 5.98 0 0 0 .511 4.9107 6.051 6.051 0 0 0 6.5146 2.9001A5.9847 5.9847 0 0 0 13.2599 24a6.0557 6.0557 0 0 0 5.7718-4.2058 5.9894 5.9894 0 0 0 3.9977-2.9001 6.0557 6.0557 0 0 0-.7475-7.0729zm-9.022 12.6081a4.4755 4.4755 0 0 1-2.8764-1.0408l.1419-.0804 4.7783-2.7582a.7948.7948 0 0 0 .3927-.6813v-6.7369l2.02 1.1686a.071.071 0 0 1 .038.052v5.5826a4.504 4.504 0 0 1-4.4945 4.4944zm-9.6607-4.1254a4.4708 4.4708 0 0 1-.5346-3.0137l.142.0852 4.783 2.7582a.7712.7712 0 0 0 .7806 0l5.8428-3.3685v2.3324a.0804.0804 0 0 1-.0332.0615L9.74 19.9502a4.4992 4.4992 0 0 1-6.1408-1.6464zM2.3408 7.8956a4.485 4.485 0 0 1 2.3655-1.9728V11.6a.7664.7664 0 0 0 .3879.6765l5.8144 3.3543-2.0201 1.1685a.0757.0757 0 0 1-.071 0l-4.8303-2.7865A4.504 4.504 0 0 1 2.3408 7.872zm16.5963 3.8558L13.1038 8.364 15.1192 7.2a.0757.0757 0 0 1 .071 0l4.8303 2.7913a4.4944 4.4944 0 0 1-.6765 8.1042v-5.6772a.79.79 0 0 0-.407-.667zm2.0107-3.0231l-.142-.0852-4.7735-2.7818a.7759.7759 0 0 0-.7854 0L9.409 9.2297V6.8974a.0662.0662 0 0 1 .0284-.0615l4.8303-2.7866a4.4992 4.4992 0 0 1 6.6802 4.66zM8.3065 12.863l-2.02-1.1638a.0804.0804 0 0 1-.038-.0567V6.0742a4.4992 4.4992 0 0 1 7.3757-3.4537l-.142.0805L8.704 5.459a.7948.7948 0 0 0-.3927.6813zm1.0976-2.3654l2.602-1.4998 2.6069 1.4998v2.9994l-2.5974 1.4997-2.6067-1.4997Z"/></svg></div>
+        <div class="int-tile" title="GitHub" style="--glow:#FFFFFF"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></div>
+      </div>
+      <span class="pill mono">אינטגרציה</span>
+      <h2 class="section-title">מערכות מחוברות, לא עוד כלים</h2>
+      <p class="section-sub">ה-WhatsApp, החנות, הקמפיינים והדאטה שלך עובדים כאחד. אנחנו מחברים את הפלטפורמות שכבר יש לך.</p>
+    </section>
+
+    <!-- ===================== SERVICES ===================== -->
+    <section class="services" id="services">
+      <div class="services__sticky">
+        <span class="pill mono">שירותים</span>
+        <h2 class="section-title">בנוי לפשט תפעול</h2>
+        <p class="section-sub">אנחנו מתכננים מערכות חכמות שמייעלות תהליכים, מחזקות הכנסות, ומחברות את הכלים שלך למערכת אחת.</p>
+      </div>
+      <div class="services__list">
+        <article class="srv">
+          <div class="srv__media" aria-hidden="true"><span class="media-noise media-noise--2"></span></div>
+          <p class="srv__num mono">/ 01</p>
+          <h3 class="srv__title">סוכני שירות AI</h3>
+          <p class="srv__desc">סוכנים תמיד-זמינים שעונים, מסננים וממירים.</p>
+          <ul class="srv__items mono">
+            <li>WhatsApp וצ'אט באתר</li><li>טיפול בהזמנות ושאלות</li>
+            <li>פלואו לשחזור עגלות</li><li>העברה לנציג אנושי</li>
+          </ul>
+        </article>
+        <article class="srv">
+          <div class="srv__media" aria-hidden="true"><span class="media-noise media-noise--3"></span></div>
+          <p class="srv__num mono">/ 02</p>
+          <h3 class="srv__title">אוטומציית SEO &amp; GEO</h3>
+          <p class="srv__desc">להימצא בגוגל &mdash; ולהיות מומלץ ע"י AI.</p>
+          <ul class="srv__items mono">
+            <li>פרסום אוטונומי</li><li>סמכות נושאית</li>
+            <li>נראות בחיפוש AI</li><li>הגעה ל-Reddit וקהילות</li>
+          </ul>
+        </article>
+        <article class="srv">
+          <div class="srv__media" aria-hidden="true"><span class="media-noise media-noise--4"></span></div>
+          <p class="srv__num mono">/ 03</p>
+          <h3 class="srv__title">אוטומציית שיווק וקמפיינים</h3>
+          <p class="srv__desc">צמיחה צפויה וניתנת להרחבה, על טייס אוטומטי.</p>
+          <ul class="srv__items mono">
+            <li>דיווח Meta וגוגל</li><li>סיכומי רווח יומיים</li>
+            <li>פייפליין קריאייטיב ורילסים</li><li>התראות הוצאה ו-ROAS</li>
+          </ul>
+        </article>
+        <article class="srv">
+          <div class="srv__media" aria-hidden="true"><span class="media-noise"></span></div>
+          <p class="srv__num mono">/ 04</p>
+          <h3 class="srv__title">מערכות AI מותאמות</h3>
+          <p class="srv__desc">חיבור, ליטוש והרחבה של ה-stack שלך.</p>
+          <ul class="srv__items mono">
+            <li>אינטגרציית כלים ו-API</li><li>סוכנים מותאמים</li>
+            <li>Self-hosted ופרטי</li><li>דשבורדים וניטור</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===================== WHY US ===================== -->
+    <section class="why" id="why">
+      <span class="pill mono">למה אנחנו</span>
+      <h2 class="section-title">בנוי לאימפקט עסקי אמיתי</h2>
+      <p class="section-sub">רוב הסוכנויות מדברות על AI. אנחנו בונים מערכות שמפחיתות עבודה ידנית, משפרות דיוק, וגדלות עם התפעול שלך.</p>
+      <div class="compare">
+        <div class="compare__row compare__row--head">
+          <div class="compare__cell"></div>
+          <div class="compare__cell compare__cell--brand"><img class="nav__logo-img" src="logo/logo-white.png" alt="Launch Pad" style="height:17px" /></div>
+          <div class="compare__cell">סוכנויות אחרות</div>
+          <div class="compare__cell">גיוס פנימי</div>
+        </div>
+        <div class="compare__row">
+          <div class="compare__cell compare__key">גישה</div>
+          <div class="compare__cell compare__cell--brand"><i class="ic ic--yes"></i> מיפוי תהליכים קודם</div>
+          <div class="compare__cell"><i class="ic ic--warn"></i> כלים קודם</div>
+          <div class="compare__cell"><i class="ic ic--warn"></i> תלוי במי שגויס</div>
+        </div>
+        <div class="compare__row">
+          <div class="compare__cell compare__key">תהליך</div>
+          <div class="compare__cell compare__cell--brand"><i class="ic ic--yes"></i> סביב התפעול שלך</div>
+          <div class="compare__cell"><i class="ic ic--no"></i> בעיקר תבניתי</div>
+          <div class="compare__cell"><i class="ic ic--yes"></i> אם יש מומחיות</div>
+        </div>
+        <div class="compare__row">
+          <div class="compare__cell compare__key">מהירות</div>
+          <div class="compare__cell compare__cell--brand"><i class="ic ic--yes"></i> שבועות, לא חודשים</div>
+          <div class="compare__cell"><i class="ic ic--warn"></i> לרוב מתעכב</div>
+          <div class="compare__cell"><i class="ic ic--no"></i> גיוס וקליטה</div>
+        </div>
+        <div class="compare__row">
+          <div class="compare__cell compare__key">אופטימיזציה</div>
+          <div class="compare__cell compare__cell--brand"><i class="ic ic--yes"></i> שיפור מתמשך</div>
+          <div class="compare__cell"><i class="ic ic--warn"></i> מקימים ונעלמים</div>
+          <div class="compare__cell"><i class="ic ic--warn"></i> מוגבל בזמינות</div>
+        </div>
+        <div class="compare__row">
+          <div class="compare__cell compare__key">עלות</div>
+          <div class="compare__cell compare__cell--brand"><i class="ic ic--yes"></i> מחיר ברור לפרויקט</div>
+          <div class="compare__cell"><i class="ic ic--warn"></i> חריגות נפוצות</div>
+          <div class="compare__cell"><i class="ic ic--no"></i> משכורת + תקורה</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== BLOG ===================== -->
+    <section class="blog" id="blog">
+      <div class="blog__head container">
+        <div>
+          <span class="pill mono">בלוג</span>
+          <h2 class="section-title">תובנות על AI ואוטומציה</h2>
+        </div>
+        <a class="btn btn--ghost" href="https://wa.me/972526088604" target="_blank" rel="noopener">עוד <span class="arrow">&lsaquo;</span></a>
+      </div>
+      <div class="blog__grid container">
+        <article class="post">
+          <div class="post__media"><img class="post__shot" src="img/blog-1.png" alt="סוכן שירות AI — ראש רובוט מזכוכית" loading="lazy"></div>
+          <p class="post__meta mono">אוטומציה</p>
+          <h3 class="post__title">מה סוכן שירות AI באמת עושה</h3>
+        </article>
+        <article class="post">
+          <div class="post__media"><img class="post__shot" src="img/blog-2.png" alt="מומלץ ע&quot;י ChatGPT — כוכב מזכוכית" loading="lazy"></div>
+          <p class="post__meta mono">SEO &amp; GEO</p>
+          <h3 class="post__title">להיות מומלץ ע"י ChatGPT, לא רק גוגל</h3>
+        </article>
+        <article class="post">
+          <div class="post__media"><img class="post__shot" src="img/blog-3.png" alt="כלים שמדברים זה עם זה — חוליות שרשרת מזכוכית" loading="lazy"></div>
+          <p class="post__meta mono">צמיחה</p>
+          <h3 class="post__title">למה הכלים שלך צריכים לדבר זה עם זה</h3>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===================== FAQ ===================== -->
+    <section class="faq" id="faq">
+      <div class="faq__head">
+        <span class="pill mono">שאלות נפוצות</span>
+        <h2 class="section-title">יש שאלות?<br />הנה התשובות</h2>
+      </div>
+      <div class="faq__list">
+        <details class="qa" open>
+          <summary>מה Launch Pad בעצם עושים? <span class="qa__sign"></span></summary>
+          <p>אנחנו סוכנות מערכות AI. אנחנו בונים אוטומציות וסוכנים שמריצים את שירות הלקוחות, השיווק והצמיחה שלך &mdash; כדי שהעסק יפעל עם פחות עבודה ידנית.</p>
+        </details>
+        <details class="qa">
+          <summary>עם איזה עסקים אתם עובדים? <span class="qa__sign"></span></summary>
+          <p>מאיקומרס ושירותים מקומיים ועד פיננסים ונדל"ן &mdash; כל עסק עם תהליכים חוזרים ששווה לאטמט.</p>
+        </details>
+        <details class="qa">
+          <summary>אתם מחליפים את הכלים הקיימים שלנו? <span class="qa__sign"></span></summary>
+          <p>לא. אנחנו מחברים את הכלים שאתם כבר משתמשים בהם למערכת אחת ומוסיפים אוטומציה מעל.</p>
+        </details>
+        <details class="qa">
+          <summary>כמה זמן לוקחת ההטמעה? <span class="qa__sign"></span></summary>
+          <p>רוב המערכות עולות לאוויר בשבועות, לא חודשים. מתחילים מהתהליך עם המינוף הכי גבוה.</p>
+        </details>
+        <details class="qa">
+          <summary>יש תמיכה שוטפת? <span class="qa__sign"></span></summary>
+          <p>כן. אנחנו מנטרים, מלטשים ומרחיבים את המערכות ככל שהתפעול שלכם גדל.</p>
+        </details>
+        <details class="qa">
+          <summary>איך מתחילים? <span class="qa__sign"></span></summary>
+          <p>קבעו שיחת היכרות חינם של 15 דק'. נמפה מה לאטמט קודם ונשלח לכם הצעת מחיר אחת ברורה.</p>
+        </details>
+      </div>
+    </section>
+
+    <!-- ===================== CTA ===================== -->
+    <section class="cta" id="contact">
+      <div class="cta__bg" aria-hidden="true"></div>
+      <div class="cta__inner">
+        <h2 class="cta__title">מוכנים לשדרג<br />את התהליך שלכם?</h2>
+        <p class="section-sub">ספרו לנו על התהליך הנוכחי. נעזור לזהות מה אפשר לאטמט ואיפה לשפר יעילות.</p>
+        <a class="shiny-cta" href="https://wa.me/972526088604" target="_blank" rel="noopener">
+          <div class="shiny-cta__outer" aria-hidden="true">
+            <div class="shiny-cta__shader" id="cta-shader"></div>
+            <div class="shiny-cta__inner"></div>
+          </div>
+          <span>לקביעת שיחה חינם</span>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="footer__grid container">
+      <div class="footer__brand">
+        <a class="nav__logo" href="#top">
+          <img class="nav__logo-img" src="logo/logo-white.png" alt="Launch Pad" />
+        </a>
+        <p class="footer__headline">בנוי. אוטומטי. באוויר.</p>
+      </div>
+      <nav class="footer__col">
+        <p class="footer__label mono">ניווט</p>
+        <a href="#top">בית</a>
+        <a href="#work">עבודות</a>
+        <a href="#services">שירותים</a>
+        <a href="#why">למה אנחנו</a>
+        <a href="#faq">שאלות</a>
+        <a href="https://wa.me/972526088604" target="_blank" rel="noopener">צור קשר</a>
+      </nav>
+      <div class="footer__col">
+        <p class="footer__label mono">אימייל</p>
+        <a class="footer__big" href="mailto:launchpad.studioil@gmail.com">launchpad.studioil@gmail.com</a>
+      </div>
+      <div class="footer__col">
+        <p class="footer__label mono">נתחיל</p>
+        <p style="font-size:1.05rem;font-weight:400;line-height:1.3;letter-spacing:-.01em;margin:10px 0 18px">מוכנים לאטמט<br />תהליך אחד?</p>
+        <a class="btn btn--ghost" href="https://wa.me/972526088604" target="_blank" rel="noopener" style="font-size:.85rem;padding:10px 18px">לשיחת 15 דק׳ חינם <span class="arrow">&lsaquo;</span></a>
+      </div>
+    </div>
+    <div class="footer__bar container">
+      <p class="mono">&copy; 2026 Launch Pad. כל הזכויות שמורות.</p>
+      <p class="mono">נבנה ע"י Launch Pad</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.14/dist/lenis.min.js"></script>
+  <script src="js/main.js?v=7"></script>
+  <script>
+  (function(){
+    var form = document.getElementById('newsletter-form');
+    if (!form) return;
+    form.addEventListener('submit', function(e){
+      e.preventDefault();
+      var input = form.querySelector('input[type="email"]');
+      var btn   = form.querySelector('button[type="submit"]');
+      var email = input.value.trim();
+      if (!email) return;
+      btn.disabled = true;
+      var orig = btn.textContent;
+      btn.textContent = '...';
+      fetch('/subscribe', {
+        method: 'POST',
+        headers: {'Content-Type':'application/json'},
+        body: JSON.stringify({email: email})
+      })
+      .then(function(r){ return r.json(); })
+      .then(function(d){
+        if (d.ok) {
+          form.innerHTML = '<p style="color:#fff;font-size:.9rem;padding:12px 0">תודה! נרשמת בהצלחה ✓</p>';
+        } else {
+          btn.disabled = false;
+          btn.textContent = orig;
+          input.style.borderColor = 'rgba(255,80,80,.5)';
+        }
+      })
+      .catch(function(){
+        btn.disabled = false;
+        btn.textContent = orig;
+      });
+    });
+  })();
+  </script>
+  <script type="module">
+    import { ShaderMount, liquidMetalFragmentShader } from 'https://esm.sh/@paper-design/shaders@0.0.76';
+    const params = { u_repetition:14, u_softness:.45, u_shiftRed:.35, u_shiftBlue:.35, u_distortion:.05, u_contour:0, u_angle:0, u_scale:14, u_shape:1, u_offsetX:0, u_offsetY:0 };
+    ['cta-shader','nav-shader','mob-shader'].forEach(id => {
+      const el = document.getElementById(id);
+      if (el) new ShaderMount(el, liquidMetalFragmentShader, params, undefined, 0.6);
+    });
+  </script>
+</body>
+</html>
